@@ -5,19 +5,13 @@ import paintball from "../assets/paintball.jpg"
 import gm from "../assets/gm.png"
 import workshop from "../assets/workshop.jpg"
 
-import dom from "../assets/eboard/dom.jpg"
-import kasey from "../assets/eboard/kasey.jpg"
-import marcelo from "../assets/eboard/marcelo.jpg"
-import mike from "../assets/eboard/mike.jpg"
-import anchal from "../assets/eboard/anchal.png"
-import aaryn from "../assets/eboard/aaryn.jpg"
-import sarah from "../assets/eboard/sarah.jpg"
-import liz from "../assets/eboard/liz.jpg"
-import aidan from "../assets/eboard/aidan.jpg"
-import chelsea from "../assets/eboard/chelsea.jpg"
-import justin from "../assets/eboard/justin.jpg"
-import dan from "../assets/eboard/dan.jpg"
-import john from "../assets/eboard/john.jpg"
+import aidan from "../assets/eboard/aidan.jpeg"
+import duru from "../assets/eboard/duru.jpeg"
+import elisabeth from "../assets/eboard/elisabeth.jpeg"
+import erika from "../assets/eboard/erika.jpeg"
+import kadin from "../assets/eboard/kadin.jpeg"
+import maria from "../assets/eboard/maria.jpeg"
+import noelle from "../assets/eboard/noelle.jpeg"
 
 import ph1 from "../assets/photos/ph1.jpg"
 import ph2 from "../assets/photos/ph2.jpg"
@@ -238,81 +232,48 @@ export const EVENTS = [
 
 export const EBOARD = [
     {
-        image: dom,
-        name: "Dominic Ficarra",
-        position: "Chair",
-        contact: "ficarr85@students.rowan.edu"
-    },
-    {
-        image: kasey,
-        name: "Kasey Minsky",
-        position: "Vice Chair",
-        contact: "minsky94@students.rowan.edu"
-    },
-    {
-        image: marcelo,
-        name: "Marcelo Bisicchia",
-        position: "Treasurer",
-        contact: "bisicc35@students.rowan.edu"
-    },
-    {
-        image: mike,
-        name: "Michael Rusnak",
-        position: "Activities Chair",
-        contact: "rusnak13@students.rowan.edu"
-    },
-    {
-        image: anchal,
-        name: "Anchal Patel",
-        position: "PR Chair",
-        contact: "patela28@students.rowan.edu"
-    },
-    {
-        image: aaryn,
-        name: "Aaryn Myers",
-        position: "Workshop Chair",
-        contact: "myersa86@students.rowan.edu"
-    },
-    {
-        image: sarah,
-        name: "Sarah Ely",
-        position: "Tournaments Chair",
-        contact: "elysar72@students.rowan.edu"
-    },
-    {
-        image: liz,
-        name: "Elisabeth Yap",
-        position: "Service Chair",
-        contact: "yapeli32@students.rowan.edu"
-    },
-    {
         image: aidan,
-        name: "Aidan O’Loughlin",
-        position: "Fundraising Chair",
+        name: "Aidan",
+        position: "Chair",
         contact: "olough74@rowan.edu"
     },
     {
-        image: chelsea,
-        name: "Chelsea Small",
+        image: elisabeth,
+        name: "Elisabeth",
+        position: "Vice Chair",
+        contact: "yapeli32@students.rowan.edu"
+    },
+    {
+        image: erika,
+        name: "Erika",
+        position: "Treasurer",
+        contact: "rivera218@rowan.edu"
+    },
+    {
+        image: noelle,
+        name: "Noelle",
         position: "Secretary",
-        contact: "smallc17@students.rowan.edu"
+        contact: "rossno75@students.rowan.edu"
     },
     {
-        image: justin,
-        name: "Justin Dougherty",
-        position: "SGA Representative",
-        contact: "doughe18@students.rowan.edu"
+        image: duru,
+        name: "Duru",
+        position: "Fundraising Chair ",
+        contact: "yesily79@rowan.edu"
     },
+    
+    
     {
-        image: dan,
-        name: "Daniel Altzman",
-        position: "SGA Representative",
-        contact: "altzma14@rowan.edu"
-    },
-    {
-        image: john,
-        name: "John Radulic",
+        image: kadin,
+        name: "Kadin",
         position: "Webmaster",
-        contact: "raduli92@students.rowan.edu"
+        contact: "Bevank82@rowan.edu"
     },
+    {
+        image: maria,
+        name: "Maria",
+        position: "Tournament Chair",
+        contact: "maione15@rowan.edu"
+    },
+    
 ]
