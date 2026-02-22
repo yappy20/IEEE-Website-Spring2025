@@ -227,6 +227,16 @@ export const EVENTS = [
         image: workshop,
         title: "Technical Workshops",
         description: "To engage our members, we like to hold workshops to help you expand on your technical knowledge! Some of our previous workshops include Resume building, Git, Verilog, Arduino, PCB design, and many others."
+    },
+    {
+        image: workshop,
+        title: "SAC 2026 (Student Activities Conference)",
+        description: "March 20-21, 2026 at Rowan University, Glassboro, NJ. A major professional conference for IEEE student members. Featuring technical competitions like SumoBot, Arduino, and Paper presentations, plus networking and corporate showcases."
+    },
+    {
+        image: workshop,
+        title: "ProfHacks 2026: Space Cowboys",
+        description: "March 20-21, 2026. Rowan University's annual 24-hour hackathon. Join us for a weekend of building, coding, and prizes!"
     }
 ]
 

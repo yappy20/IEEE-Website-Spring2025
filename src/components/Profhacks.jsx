@@ -17,7 +17,7 @@ const Profhacks = () => {
     <section className="container mx-auto my-8" id="profhacks">
       {/* Title */}
       <h2 className="mb-8 text-center text-5xl tracking-tighter lg:text-6xl pt-14">
-        ProfHacks 2025, Casino Royale - Coming Soon!
+        ProfHacks 2026, Space Cowboys - Registration Opening Soon!
       </h2>
 
       <div className="flex flex-wrap">
@@ -29,13 +29,22 @@ const Profhacks = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl tracking-tighter lg:text-4xl">
-            The Highroller's Hackathon
+            The Space Cowboys Hackathon
           </h2>
 
           <div className="mb-8 mt-1 h-1 w-56 bg-emerald-500 lg:-rotate-1"></div>
 
           <p className="m-8 text-xl leading-relaxed tracking-tight lg:max-w-xl whitespace-pre-wrap">
-            Get ready for ProfHacks 2025! Registration is below and more information will be coming soon. Stay tuned for updates on our Instagram!
+            Get ready for ProfHacks 2026! Registration is opening soon. Visit{" "}
+            <a
+              href="https://profhacks.rowanieee.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-emerald-500 underline"
+            >
+              profhacks.rowanieee.org
+            </a>{" "}
+            for more information and stay tuned for updates on our Instagram!
           </p>
         </motion.div>
 
@@ -53,7 +62,7 @@ const Profhacks = () => {
           onClick={toggleForm}
           className="px-6 py-3 bg-emerald-500 text-white text-lg rounded-lg shadow-md hover:bg-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-300"
         >
-          {showForm ? "Hide Registration Form" : "Register for ProfHacks 2025"}
+          {showForm ? "Hide Registration Form" : "Register for ProfHacks 2026"}
         </button>
       </div>
 
@@ -61,7 +70,7 @@ const Profhacks = () => {
       {showForm && (
         <div className="mt-12">
           <h3 className="text-center text-2xl font-bold my-4">
-            Sign Up for ProfHacks 2025 Today!
+            Sign Up for ProfHacks 2026 Today!
           </h3>
           <p className="text-center text-lg mb-4">
             Secure your spot for this exciting event by filling out the form below:
@@ -80,7 +89,7 @@ const Profhacks = () => {
           <p className="text-center mt-4">
             If the form doesn’t load,{" "}
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdxZ_OQAaXzoo__Ij3DHmA7Ozn1IuDPNuXzds7Cg0acnNmdjA/viewform"
+              href="https://profhacks.rowanieee.org"
               target="_blank"
               rel="noopener noreferrer"
               className="text-emerald-500 underline"
