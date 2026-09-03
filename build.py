@@ -189,7 +189,7 @@ PAGES["events.html"] = dict(
           <h2>SAC 2026 &mdash; Student Activities Conference</h2>
           <p>A major professional conference for IEEE student members, featuring technical competitions like SumoBot, Arduino, and paper presentations, plus networking and corporate showcases.</p>
         </div>
-        <img class="media-photo" src="images/events/workshop.jpg" alt="IEEE student workshop and competition">
+        <img class="media-photo" src="images/events/workshop.jpg" alt="IEEE student workshop and competition" loading="lazy" decoding="async">
       </div>
 
       <div class="spotlight">
@@ -204,7 +204,7 @@ PAGES["events.html"] = dict(
             <a class="btn btn-gold" href="https://profhacks.rowanieee.org" target="_blank" rel="noopener">Visit profhacks.rowanieee.org</a>
           </div>
         </div>
-        <img class="media-photo" src="images/events/profhacks-2026.png" alt="ProfHacks 2026: Space Cowboys">
+        <img class="media-photo" src="images/events/profhacks-2026.png" alt="ProfHacks 2026: Space Cowboys" loading="lazy" decoding="async">
       </div>
     </div>
   </section>
@@ -275,13 +275,13 @@ PAGES["projects.html"] = dict(
       </div>
       <div class="card-grid cols-2">
         <div class="card">
-          <img class="media-photo" style="margin-bottom:18px;" src="images/events/workshop.jpg" alt="SumoBot and robotics competition">
+          <img class="media-photo" style="margin-bottom:18px;" src="images/events/workshop.jpg" alt="SumoBot and robotics competition" loading="lazy" decoding="async">
           <span class="tag tag-blue">SAC Competition</span>
           <h3>SumoBot</h3>
           <p>Members design, build, and program small robots to compete head-to-head at the Student Activities Conference.</p>
         </div>
         <div class="card">
-          <img class="media-photo" style="margin-bottom:18px;" src="images/events/general-meeting.png" alt="Arduino and embedded projects">
+          <img class="media-photo" style="margin-bottom:18px;" src="images/events/general-meeting.jpg" alt="Arduino and embedded projects" loading="lazy" decoding="async">
           <span class="tag tag-blue">SAC Competition</span>
           <h3>Arduino</h3>
           <p>A hands-on microcontroller challenge testing what teams can build and program under a time limit.</p>
@@ -341,22 +341,22 @@ PAGES["projects.html"] = dict(
         <div class="divider-rule"></div>
       </div>
       <div class="gallery-grid">
-        <img src="images/showcase/ph1.jpg" alt="ProfHacks 2024">
-        <img src="images/showcase/ph2.jpg" alt="ProfHacks 2024">
-        <img src="images/showcase/ph3.jpg" alt="ProfHacks 2024">
-        <img src="images/showcase/ph4.jpg" alt="ProfHacks 2024">
-        <img src="images/showcase/ph5.jpg" alt="ProfHacks 2024">
-        <img src="images/showcase/ph6.jpg" alt="ProfHacks 2024">
-        <img src="images/showcase/ph7.jpg" alt="ProfHacks 2024">
-        <img src="images/showcase/ph8.jpg" alt="ProfHacks 2024">
-        <img src="images/showcase/ph9.jpg" alt="ProfHacks 2024">
-        <img src="images/showcase/ph10.jpg" alt="ProfHacks 2024">
-        <img src="images/showcase/ph11.jpg" alt="ProfHacks 2024">
-        <img src="images/showcase/ph12.jpg" alt="ProfHacks 2024">
-        <img src="images/showcase/ph13.jpg" alt="ProfHacks 2024">
-        <img src="images/showcase/ph14.jpg" alt="ProfHacks 2024">
-        <img src="images/showcase/ph15.jpg" alt="ProfHacks 2024">
-        <img src="images/showcase/ph16.jpg" alt="ProfHacks 2024">
+        <img src="images/showcase/ph1.jpg" alt="ProfHacks 2024" loading="lazy" decoding="async">
+        <img src="images/showcase/ph2.jpg" alt="ProfHacks 2024" loading="lazy" decoding="async">
+        <img src="images/showcase/ph3.jpg" alt="ProfHacks 2024" loading="lazy" decoding="async">
+        <img src="images/showcase/ph4.jpg" alt="ProfHacks 2024" loading="lazy" decoding="async">
+        <img src="images/showcase/ph5.jpg" alt="ProfHacks 2024" loading="lazy" decoding="async">
+        <img src="images/showcase/ph6.jpg" alt="ProfHacks 2024" loading="lazy" decoding="async">
+        <img src="images/showcase/ph7.jpg" alt="ProfHacks 2024" loading="lazy" decoding="async">
+        <img src="images/showcase/ph8.jpg" alt="ProfHacks 2024" loading="lazy" decoding="async">
+        <img src="images/showcase/ph9.jpg" alt="ProfHacks 2024" loading="lazy" decoding="async">
+        <img src="images/showcase/ph10.jpg" alt="ProfHacks 2024" loading="lazy" decoding="async">
+        <img src="images/showcase/ph11.jpg" alt="ProfHacks 2024" loading="lazy" decoding="async">
+        <img src="images/showcase/ph12.jpg" alt="ProfHacks 2024" loading="lazy" decoding="async">
+        <img src="images/showcase/ph13.jpg" alt="ProfHacks 2024" loading="lazy" decoding="async">
+        <img src="images/showcase/ph14.jpg" alt="ProfHacks 2024" loading="lazy" decoding="async">
+        <img src="images/showcase/ph15.jpg" alt="ProfHacks 2024" loading="lazy" decoding="async">
+        <img src="images/showcase/ph16.jpg" alt="ProfHacks 2024" loading="lazy" decoding="async">
       </div>
     </div>
   </section>
@@ -381,7 +381,7 @@ PAGES["projects.html"] = dict(
 def person(name, role, email, photo):
     return f"""
         <div class="card person-card">
-          <img class="avatar" src="images/team/{photo}" alt="{name}">
+          <img class="avatar" src="images/team/{photo}" alt="{name}" loading="lazy" decoding="async">
           <h3>{name}</h3>
           <div class="role">{role}</div>
           <a class="email" href="mailto:{email}">{email}</a>
