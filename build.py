@@ -25,12 +25,7 @@ HEADER = """
 <header class="site-header">
   <div class="nav-wrap">
     <a href="index.html" class="brand">
-      <svg class="torch" width="34" height="34" viewBox="0 0 34 34" fill="none">
-        <path d="M17 1L33 17L17 33L1 17L17 1Z" stroke="#5ea3e8" stroke-width="2"/>
-        <path d="M17 9c-2 2.4-3 4-3 6a3 3 0 0 0 6 0c0-2-1-3.6-3-6z" fill="#ffb81c"/>
-        <rect x="15.3" y="17" width="3.4" height="7" rx="1" fill="#f4f7fc"/>
-        <rect x="13.5" y="23.5" width="7" height="2.4" rx="1.2" fill="#f4f7fc"/>
-      </svg>
+      <img class="torch" src="images/ieee-torch.png" alt="IEEE" width="34" height="34">
       <span>Rowan IEEE<small>STUDENT BRANCH &middot; REGION 2</small></span>
     </a>
     <nav class="nav-links">
@@ -57,12 +52,7 @@ FOOTER = """
     <div class="footer-grid">
       <div>
         <div class="brand" style="margin-bottom:12px;">
-          <svg width="30" height="30" viewBox="0 0 34 34" fill="none">
-            <path d="M17 1L33 17L17 33L1 17L17 1Z" stroke="#5ea3e8" stroke-width="2"/>
-            <path d="M17 9c-2 2.4-3 4-3 6a3 3 0 0 0 6 0c0-2-1-3.6-3-6z" fill="#ffb81c"/>
-            <rect x="15.3" y="17" width="3.4" height="7" rx="1" fill="#f4f7fc"/>
-            <rect x="13.5" y="23.5" width="7" height="2.4" rx="1.2" fill="#f4f7fc"/>
-          </svg>
+          <img class="torch" src="images/ieee-torch.png" alt="IEEE" width="30" height="30">
           <span>Rowan IEEE</span>
         </div>
         <p style="max-width:280px;">Rowan University's IEEE Student Branch, part of IEEE Region 2. Open to students of all majors.</p>

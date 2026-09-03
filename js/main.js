@@ -1,9 +1,52 @@
 /* ==========================================================================
    Rowan IEEE — Shared Script
-   Handles: mobile nav toggle, active nav link, EmailJS contact form, footer year.
+   Handles: page transitions, mobile nav, active nav link, EmailJS, footer year.
    ========================================================================== */
 
 document.addEventListener("DOMContentLoaded", function () {
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* Restore page if browser restores from bfcache after a leave transition */
+  window.addEventListener("pageshow", function (event) {
+    if (event.persisted) {
+      document.body.classList.remove("is-leaving");
+    }
+  });
+
+  /* Smooth exit when navigating between internal pages */
+  function isInternalNav(anchor) {
+    if (!anchor || !anchor.href) return false;
+    if (anchor.target && anchor.target !== "_self") return false;
+    if (anchor.hasAttribute("download")) return false;
+    var url;
+    try {
+      url = new URL(anchor.href, window.location.href);
+    } catch (err) {
+      return false;
+    }
+    if (url.origin !== window.location.origin) return false;
+    if (url.pathname === window.location.pathname && url.hash) return false;
+    var next = url.pathname + url.search + url.hash;
+    var here = window.location.pathname + window.location.search + window.location.hash;
+    return next !== here;
+  }
+
+  if (!reduceMotion) {
+    document.addEventListener("click", function (e) {
+      if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) {
+        return;
+      }
+      var anchor = e.target.closest("a");
+      if (!isInternalNav(anchor)) return;
+
+      e.preventDefault();
+      document.body.classList.add("is-leaving");
+      setTimeout(function () {
+        window.location.href = anchor.href;
+      }, 220);
+    });
+  }
+
   /* Mobile nav toggle */
   var header = document.querySelector(".site-header");
   var toggle = document.querySelector(".nav-toggle");
@@ -16,6 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".nav-links a").forEach(function (link) {
       link.addEventListener("click", function () {
         header.classList.remove("nav-open");
+        toggle.setAttribute("aria-expanded", "false");
       });
     });
   }
